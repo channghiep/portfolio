@@ -12,6 +12,9 @@ module.exports = {
         textcolor3: "#8892B0"
       }
     },
+    fontFamily:{
+      'sans': ["Calibre","Inter","San Francisco","SF Pro Text"]
+    }
   },
   plugins: [],
 }

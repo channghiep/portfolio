@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.steering-down{
+  transform: translateY(.5px) rotate(45deg);  
+}
+.steering-up{
+  transform: translateY(-.5px) rotate(-45deg);
+}

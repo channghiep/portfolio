@@ -2,6 +2,7 @@ import { Tabs, Tab, TabPanel, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import { ExternalLink, GitHub, Linkedin } from "react-feather"
+import Navigation from './navigation/navigation';
 
 function Landing() {
 
@@ -17,11 +18,11 @@ function Landing() {
   ]
   return (
     <div>
-      <div class="bg-background1 font-roboto">
-        <header class="bg-gray-200 h-16 fixed z-1000 top-0 w-full">
-          <nav>
-            
-          </nav>
+      <div class="bg-background1 font-sans">
+        {/* <header class="bg-gray-200 h-16 fixed z-1000 top-0 w-full">
+        </header> */}
+        <header class="">
+          <Navigation/>
         </header>
 
         {/* <div class="text-textcolor2 fixed bottom-0 w-[40px] left-[20px]">
@@ -245,7 +246,7 @@ function Landing() {
 
                     </p>
                   </div>
-                  <ul className='flex my-[10px]  ml-[-10px] font-semibold text-textcolor'>
+                  <ul className='flex flex-wrap my-[10px]  ml-[-10px] font-semibold text-textcolor'>
                     <li className='mx-[10px]'>ReactJS</li>
                     <li className='mx-[10px]'>TailWind</li>
                     <li className='mx-[10px]'>YouTube Search API</li>
