@@ -21,3 +21,7 @@ code {
 .steering-up{
   transform: translateY(-.5px) rotate(-45deg);
 }
+
+.nav-ul{      
+  transition: .5s ease;
+}

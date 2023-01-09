@@ -1,20 +1,49 @@
-import { Tabs, Tab, TabPanel, Typography, useMediaQuery } from '@mui/material';
+import { Tabs, Tab, TabPanel, Typography, useMediaQuery, tableHeadClasses } from '@mui/material';
 // import useMediaQuery from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import { ExternalLink, GitHub, Linkedin, Instagram } from "react-feather"
 import Navigation from './navigation/navigation';
+import profile from '../assets/profile.jpg'
 
 function Landing() {
 
   // control tab index
   const [tabIndex, setTabIndex] = useState(0)
+  const [navIsActivated, setNavActive] = useState(false);
 
   const handleTabChange = (event, newTabIndex) => {
     setTabIndex(newTabIndex)
   }
 
   const arrayOfWork = [
+    {
+      project: "YouTube Search Project",
+      description: "A web app created using ReactJS and styling with Tailwind. The application intergrates Youtube Search API and Embed Youtube Video enabling user to fully watch a Youtube video while being able to search and create a list for next video",
+      tech:[
+        "ReactJS", "Tailwind", "Youtube Search API", "AWS Amplify"
+      ],
+      gitLink:"",
+      externalLink:""
+    },
+    {
+      project: "Truong Thanh Restaurant Project",
+      description: "A website for local Vietnamese restaurant was built with React and styled with CSS. The website is also intergrated with PerkHero to enable online ordering feature",
+      tech:[
+        "ReactJS", "CSS", "AWS Amplify"
+      ],
+      gitLink:"",
+      externalLink:""
+    },
+    {
+      project: "Aria Nail Salon Project",
+      description: "A website for local Vietnamese Nail Salon was built with React and styled with CSS. The website is mainly used to show customer salon's galery and to promote to customer seasonal special deal",
+      tech:[
+        "ReactJS", "CSS", "AWS Amplify"
+      ],
+      gitLink:"",
+      externalLink:""
+    }
 
   ]
 
@@ -23,11 +52,11 @@ function Landing() {
 
   return (
     <div>
-      <div class="bg-background1 font-sans">
+      <div class={`bg-background1 font-sans`}>
         {/* <header class="bg-gray-200 h-16 fixed z-1000 top-0 w-full">
         </header> */}
         <header class="">
-          <Navigation/>
+          <Navigation setActive={setNavActive} isActivated={navIsActivated}/>
         </header>
 
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] left-[20px] md:block">
@@ -50,7 +79,7 @@ function Landing() {
           </ul>
         </div>
 
-        <div>
+        <div className={`${navIsActivated ? "blur-sm" : ""}`}>
           <main class="w-full px-[50px]">
 
             <section class="flex flex-col justify-center items-start min-h-screen h-screen max-w-screen-sm md:mx-auto xl:max-w-screen-lg">
@@ -64,18 +93,18 @@ function Landing() {
                 <h3 class="text-4xl text-textcolor3">I build website for small businesses</h3>
               </div>
               <div>
-                <p class="text-lg text-textcolor3 font-mono">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
-                  Currently, I’m focused on building accessible, human-centered products a</p>
+                <p class="text-lg text-textcolor3 font-mono">I’m a web developer specializing in building (and occasionally designing) exceptional digital experiences. 
+                  Currently, I’m focused on impproving my skill with MERN stack</p>
               </div>
             </section>
 
             <section class="min-h-screen md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
-              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-[90px] after:h-[1px] after:bg-white after:block after:mx-auto"><span class="text-textcolor">01.&nbsp;</span>About Me</h2>
+              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">01.&nbsp;</span>About Me</h2>
               <div class="text-textcolor3 md:grid md:grid-cols-3 gap-x-10 font-mono">
                 <div className='col-span-2'>
-                  <p class="pb-[15px]">Hello! My name is Brian and I enjoy creating things that live on the internet. My interest in web development started back in 20 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-                  <p class="pb-[15px]">Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-                  <p class="pb-[15px]">I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
+                  <p class="pb-[15px]">Hello! My name is Brian Nguyen, and I am a web developer and production support specialist from Surrey, BC, Canada.</p>
+                  <p class="pb-[15px]">I have a passion for creating professional and visually appealing websites for small businesses, and have had success in increasing incoming calls to my clients' businesses by over 20% through my use of ReactJS. In my work, I also enjoy collaborating with customers to create and manage their online profiles and social media accounts, and have a strong track record of maintaining high ratings on Google.</p>
+                  <p class="pb-[15px]">In addition to my work as a web developer, I am also currently employed as a production support specialist at Wesgar Inc., where I analyze engineer drawings, build manufacturing procedures, and estimate production times and expenses. I have been able to increase the company's winning rate of quotations by 15% through my identification of potential feasibility and manufacturing issues, and have helped to reduce product rejection rates through the creation of accurate processes.</p>
                   <p class="pb-[15px]">Here are a few technologies I’ve been working with recently:</p>
                   
                   <ul class="grid grid-cols-2">
@@ -107,13 +136,14 @@ function Landing() {
                 </div>
 
                 <div class="mt-20 md:relative">
-                  <img class="h-72 w-72 md:absolute md:object-cover md:h-auto md:w-full rounded-md m-auto shadow-neumor1 " src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                  <img class="h-auto w-72 md:absolute md:object-cover md:h-auto md:w-full rounded-md m-auto shadow-neumor1" src={profile} alt=""/>
+                  {/* <div className='h-72 w-72 absolute md:object-cover md:h-auto md:w-full rounded-md m-auto bg-black z-20'></div> */}
                 </div>
               </div>
             </section>
 
-            <section class="min-h-screen h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
-              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-[90px] after:h-[1px] after:bg-textcolor3 after:block after:mx-auto"><span class="text-textcolor">02.&nbsp;</span>Where I've worked</h2>
+            <section class="min-h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
+              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">02.&nbsp;</span>Where I've worked</h2>
 
               <div className='md:grid md:grid-cols-4'>
                 <Box>
@@ -271,15 +301,16 @@ function Landing() {
               
             </section>
 
-            <section className='min-h-screen h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
-              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-[90px] after:h-[.5px] after:bg-textcolor3 after:block after:mx-auto"><span class="text-textcolor">03.&nbsp;</span>Some Things I've Built</h2>
+            <section className='min-h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
+              <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">03.&nbsp;</span>Some Things I've Built</h2>
 
               <ul className='text-textcolor3'>
-                <li className='shadow-md bg-slate-800/30 p-5'>
+                {/* <li className='shadow-md bg-slate-800/30 p-5'>
                   <div>
                     <p class="text-md font-semibold text-textcolor">Featured Project</p>
                     <h3 class="text-xl font-semibold text-textcolor2">YouTube Search Project</h3>
-                    <p className='my-6 font-mono'>A simple website created using ReactJS and styling with Tailwind. The application intergrates Youtube Search API and Embed Youtube Video enabling user to fully watch a Youtube video while being able to search and create a list for next video
+                    <p className='my-6 font-mono'>
+                      A simple website created using ReactJS and styling with Tailwind. The application intergrates Youtube Search API and Embed Youtube Video enabling user to fully watch a Youtube video while being able to search and create a list for next video
 
                     </p>
                   </div>
@@ -297,8 +328,35 @@ function Landing() {
                       <ExternalLink/>
                     </a>
                   </div>
-                </li>
-                
+                </li> */}
+                {arrayOfWork.map((project,index) => {
+                  return(
+                    <li className='shadow-md bg-slate-800/30 p-5 mb-5' key={index}>
+                      <div>
+                        <p class="text-md font-semibold text-textcolor">Featured Project</p>
+                        <h3 class="text-xl font-semibold text-textcolor2">{project.project}</h3>
+                        <p className='my-6 font-mono'>
+                           {project.description}
+                        </p>
+                      </div>
+                      <ul className='flex flex-wrap my-[10px] ml-[-10px] font-semibold text-textcolor'>
+                        {project.tech.map((item,index) => {
+                          return(
+                            <li className='mx-[10px]' key={index}>{item}</li>
+                          )
+                        })}
+                      </ul>
+                      <div className='flex  items-center mt-[10px] ml-[-10px]'>
+                        <a className='flex justify-center items-center p-[10px]' href={project.gitLink}>
+                          <GitHub/>
+                        </a>
+                        <a className='flex justify-center items-center p-[10px]' href={project.externalLink}>
+                          <ExternalLink/>
+                        </a>
+                      </div>
+                    </li>
+                  )
+                })}
               </ul>
             </section>
 
@@ -306,7 +364,7 @@ function Landing() {
               <h2 class="text-xl font-semibold text-textcolor mt-[10px] mb-[20px] text-center">04.&nbsp;What's Next ?</h2>
               <h1 class="text-4xl font-bold text-textcolor2 mt-[10px] mb-[40px] text-center">Get In Touch</h1>
               <p className='font-mono'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quibusdam iste voluptates obcaecati doloremque rerum modi dolorem, officiis corporis repellat quo tempora quis voluptate tenetur nam, illum dolorum veritatis ea!
+                I'm currently looking for a web developer position to improve my skills in a more structured environment. My inbox is open for opportunities, I will get back to your email ASAP 
               </p>
             </section>
 
@@ -328,7 +386,6 @@ function Landing() {
             </div>
           </footer>
         </div>
-
       </div>
     </div>
   )
