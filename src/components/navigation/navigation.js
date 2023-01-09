@@ -14,13 +14,8 @@ const Navigation = () => {
     }
 
     useEffect(()=>{
-        let prevPos = window.scrollY
-        if(prevPos != 0){
-            setAtTop(false)
-        }else{
-            setAtTop(true)
-        }
-
+        let prevPos = window.scrollY; 
+        
         function handleScroll(){
             const currentPos = window.scrollY
             if(currentPos > prevPos){
@@ -29,12 +24,21 @@ const Navigation = () => {
                 setScrollDown(false)
             }
             prevPos = currentPos
+            if(prevPos !== 0){
+                setAtTop(false)
+            }else{
+    
+                console.log(prevPos)
+                setAtTop(true)
+            }
         }
         window.addEventListener('scroll', handleScroll)
     },[])
+    // console.log(scrolledDown)
+    console.log(atTop)
     return(
         <div className="">
-            <div className={`grid grid-cols-12 items-center w-full h-14  transition ease-out duration-500 fixed ${scrolledDown ? "-top-14" : `${atTop ? "white" : "shadow-md bg-slate-900/90"}` }`}>
+            <div className={`grid grid-cols-12 items-center w-full h-14  transition ease-out duration-500 fixed ${scrolledDown ? "-top-14" : `${atTop ? "" : "shadow-md bg-slate-900/90"}` }`}>
                 <div className="col-span-11 md:col-span-9 ml-5">
                     <a className="text-textcolor" href="#">Brian</a>
                 </div>
