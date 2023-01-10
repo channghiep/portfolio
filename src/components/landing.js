@@ -179,7 +179,7 @@ function Landing() {
                           borderLeft:1,
                         }
                       },
-                      '.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected ': { color: "#FFD400" },
+                      '.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected': { color: "#FFD400" },
                       '.css-lfwcke-MuiTabs-flexContainer': {
                         [`@media (min-width: 768px)`]:{
                           alignItems: 'flex-start',
