@@ -36,6 +36,9 @@ code {
   background-image: linear-gradient(0deg, rgba(13, 13, 79, 0.7), rgba(13, 13, 90, 0.5)), url(/src/assets/profile.jpg);
  
 }
+.css-1q2h7u5.Mui-selected{
+  color: #FFD400;
+} 
 
 @media  (min-width: 768px) {
   .profile-background{
