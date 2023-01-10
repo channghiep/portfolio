@@ -2,7 +2,7 @@ import { Tabs, Tab, TabPanel, Typography, useMediaQuery, tableHeadClasses } from
 // import useMediaQuery from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
-import { ExternalLink, GitHub, Linkedin, Instagram } from "react-feather"
+import { ExternalLink, GitHub, Linkedin, Instagram , Facebook} from "react-feather"
 import Navigation from './navigation/navigation';
 import profile from '../assets/profile.jpg'
 
@@ -23,8 +23,8 @@ function Landing() {
       tech:[
         "ReactJS", "Tailwind", "Youtube Search API", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/youtubesearch",
+      externalLink:"https://master.d3sv4kcm72raqj.amplifyapp.com/"
     },
     {
       project: "Truong Thanh Restaurant Project",
@@ -32,8 +32,8 @@ function Landing() {
       tech:[
         "ReactJS", "CSS", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/truongthanh",
+      externalLink:"https://truongthanh.ca"
     },
     {
       project: "Aria Nail Salon Project",
@@ -41,8 +41,8 @@ function Landing() {
       tech:[
         "ReactJS", "CSS", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/AriaNails-website",
+      externalLink:"https://master.dxisirf63jlq5.amplifyapp.com/"
     }
 
   ]
@@ -62,18 +62,28 @@ function Landing() {
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] left-[20px] md:block">
           <ul class="flex flex-col items-center m-0 p-0">
             <li className='my-2'>
-              <GitHub/>
+              <a href="https://github.com/channghiep">
+                <GitHub/>
+              </a>
             </li>
             <li className='my-2'>
-              <Linkedin/>
-            </li>
-            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"><Instagram/></li>
+              <a href="https://www.linkedin.com/in/channghiep/">
+                <Linkedin/>
+              </a>
+             </li>
+            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto">
+              <a href="https://www.facebook.com/nghiep.nguyenchan">
+                <Facebook/>
+              </a>
+              </li>
           </ul>
         </div>
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] right-[20px] md:block">
           <ul class="flex flex-col items-center m-0 p-0">
             <li className='my-8 rotate-90'>
-              Sciamachy.ca
+              <a href="https://sciamachy.ca">
+                Sciamachy.ca
+              </a>
             </li>
             <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"></li>
           </ul>
