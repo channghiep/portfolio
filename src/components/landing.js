@@ -361,7 +361,7 @@ function Landing() {
                 <li className='mx-5'>
                   <a href="https://github.com/channghiep">
                     <GitHub/>
-                  </a>>
+                  </a>
                 </li>
                 <li className='mx-5'>
                   <a href="https://www.linkedin.com/in/channghiep/">
