@@ -37,7 +37,7 @@ code {
  
 }
 .css-1q2h7u5.Mui-selected{
-  color: #FFD400;
+  color: #FFD400!important;
 } 
 
 @media  (min-width: 768px) {
