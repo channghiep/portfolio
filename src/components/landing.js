@@ -359,12 +359,12 @@ function Landing() {
             <div>
               <ul className='flex justify-center'>
                 <li className='mx-5'>
-                  <a>
+                  <a href="https://github.com/channghiep">
                     <GitHub/>
-                  </a>
+                  </a>>
                 </li>
                 <li className='mx-5'>
-                  <a>
+                  <a href="https://www.linkedin.com/in/channghiep/">
                     <Linkedin/>
                   </a>
                 </li>
