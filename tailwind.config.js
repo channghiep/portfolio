@@ -19,7 +19,7 @@ module.exports = {
       }
     },
     fontFamily:{
-      'sans': ["Calibre","Sofia Sans","San Francisco","SF Pro Text"],
+      'sans': ["Calibre","Montserrat","San Francisco","SF Pro Text"],
       'mono': ["SF Mono","Fira Code","Fira Mono","Roboto Mono", "monospace"]
     },
     boxShadow: {
