@@ -135,8 +135,8 @@ function Landing() {
                   </ul>
                 </div>
 
-                <div class="mt-20 md:relative">
-                  <img class="h-auto w-72 md:absolute md:object-cover md:h-auto md:w-full rounded-md m-auto shadow-neumor1" src={profile} alt=""/>
+                <div class="mt-20 md:relative rounded-md shadow-neumor1 profile-background mx-auto">
+                  {/* <img class="h-auto w-72 md:absolute md:object-cover md:h-auto md:w-full rounded-md m-auto shadow-neumor1" src={profile} alt=""/> */}
                   {/* <div className='h-72 w-72 absolute md:object-cover md:h-auto md:w-full rounded-md m-auto bg-black z-20'></div> */}
                 </div>
               </div>
@@ -154,7 +154,7 @@ function Landing() {
                     onChange={handleTabChange}
                     sx={{
                       '& .MuiTabs-indicator': { 
-                        backgroundColor: "#58E3C4",
+                        backgroundColor: "#FFD400",
                         [`@media (min-width: 768px)`]:{
                           left: 0,
                         }
@@ -169,7 +169,7 @@ function Landing() {
                           borderLeft:1,
                         }
                       },
-                      '.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected': { color: "#58E3C4" },
+                      '.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected': { color: "#FFD400" },
                       '.css-lfwcke-MuiTabs-flexContainer': {
                         [`@media (min-width: 768px)`]:{
                           alignItems: 'flex-start',
@@ -305,30 +305,6 @@ function Landing() {
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">03.&nbsp;</span>Some Things I've Built</h2>
 
               <ul className='text-textcolor3'>
-                {/* <li className='shadow-md bg-slate-800/30 p-5'>
-                  <div>
-                    <p class="text-md font-semibold text-textcolor">Featured Project</p>
-                    <h3 class="text-xl font-semibold text-textcolor2">YouTube Search Project</h3>
-                    <p className='my-6 font-mono'>
-                      A simple website created using ReactJS and styling with Tailwind. The application intergrates Youtube Search API and Embed Youtube Video enabling user to fully watch a Youtube video while being able to search and create a list for next video
-
-                    </p>
-                  </div>
-                  <ul className='flex flex-wrap my-[10px]  ml-[-10px] font-semibold text-textcolor'>
-                    <li className='mx-[10px]'>ReactJS</li>
-                    <li className='mx-[10px]'>TailWind</li>
-                    <li className='mx-[10px]'>YouTube Search API</li>
-                    <li className='mx-[10px]'>AWS Amplify</li>
-                  </ul>
-                  <div className='flex  items-center mt-[10px] ml-[-10px]'>
-                    <a className='flex justify-center items-center p-[10px]'>
-                      <GitHub/>
-                    </a>
-                    <a className='flex justify-center items-center p-[10px]'>
-                      <ExternalLink/>
-                    </a>
-                  </div>
-                </li> */}
                 {arrayOfWork.map((project,index) => {
                   return(
                     <li className='shadow-md bg-slate-800/30 p-5 mb-5' key={index}>
