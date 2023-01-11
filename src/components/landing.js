@@ -81,8 +81,8 @@ function Landing() {
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] right-[20px] md:block">
           <ul class="flex flex-col items-center m-0 p-0">
             <li className='my-8 rotate-90'>
-              <a href="https://sciamachy.ca">
-                Sciamachy.ca
+              <a href="https://briannguyen.net">
+                briannguyen.net
               </a>
             </li>
             <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"></li>
