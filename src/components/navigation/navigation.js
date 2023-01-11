@@ -39,7 +39,7 @@ const Navigation = (props) => {
     console.log(atTop)
     return(
         <div className="">
-            <div className={`grid grid-cols-12 items-center w-full h-14 transition ease-out duration-500 fixed z-20 ${scrolledDown ? "-top-14" : `${atTop ? "" : "shadow-md bg-slate-900/90"}` }`}>
+            <div className={`grid grid-cols-12 items-center w-full h-14 transition ease-out duration-500 fixed z-20 ${scrolledDown ? "-top-14" : `${atTop ? "" : `${isActivated ? "" : "shadow-md bg-slate-900/90"}`}` }`}>
                 
                 <div className="col-span-11 md:col-span-8 lg:col-span-9 ml-9">
                     <a className="text-textcolor" href="#">Brian</a>
