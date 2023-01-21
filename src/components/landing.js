@@ -2,7 +2,7 @@ import { Tabs, Tab, TabPanel, Typography, useMediaQuery, tableHeadClasses } from
 // import useMediaQuery from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
-import { ExternalLink, GitHub, Linkedin, Instagram } from "react-feather"
+import { ExternalLink, GitHub, Linkedin, Instagram , Facebook} from "react-feather"
 import Navigation from './navigation/navigation';
 import profile from '../assets/profile.jpg'
 
@@ -23,8 +23,8 @@ function Landing() {
       tech:[
         "ReactJS", "Tailwind", "Youtube Search API", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/youtubesearch",
+      externalLink:"https://master.d3sv4kcm72raqj.amplifyapp.com/"
     },
     {
       project: "Truong Thanh Restaurant Project",
@@ -32,8 +32,8 @@ function Landing() {
       tech:[
         "ReactJS", "CSS", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/truongthanh",
+      externalLink:"https://truongthanh.ca"
     },
     {
       project: "Aria Nail Salon Project",
@@ -41,8 +41,8 @@ function Landing() {
       tech:[
         "ReactJS", "CSS", "AWS Amplify"
       ],
-      gitLink:"",
-      externalLink:""
+      gitLink:"https://github.com/channghiep/AriaNails-website",
+      externalLink:"https://master.dxisirf63jlq5.amplifyapp.com/"
     }
 
   ]
@@ -62,18 +62,28 @@ function Landing() {
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] left-[20px] md:block">
           <ul class="flex flex-col items-center m-0 p-0">
             <li className='my-2'>
-              <GitHub/>
+              <a href="https://github.com/channghiep">
+                <GitHub/>
+              </a>
             </li>
             <li className='my-2'>
-              <Linkedin/>
-            </li>
-            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"><Instagram/></li>
+              <a href="https://www.linkedin.com/in/channghiep/">
+                <Linkedin/>
+              </a>
+             </li>
+            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto">
+              <a href="https://www.facebook.com/nghiep.nguyenchan">
+                <Facebook/>
+              </a>
+              </li>
           </ul>
         </div>
         <div class="hidden text-textcolor2 fixed bottom-0 w-[40px] right-[20px] md:block">
           <ul class="flex flex-col items-center m-0 p-0">
             <li className='my-8 rotate-90'>
-              Sciamachy.ca
+              <a href="https://briannguyen.net">
+                briannguyen.net
+              </a>
             </li>
             <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"></li>
           </ul>
@@ -98,7 +108,7 @@ function Landing() {
               </div>
             </section>
 
-            <section class="min-h-screen md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto" id="about">
+            <section id="about" class="min-h-screen md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">01.&nbsp;</span>About Me</h2>
               <div class="text-textcolor3 md:grid md:grid-cols-3 gap-x-10 font-mono">
                 <div className='col-span-2'>
@@ -142,7 +152,7 @@ function Landing() {
               </div>
             </section>
 
-            <section class="min-h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto" id="experience">
+            <section id="experience" class="min-h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">02.&nbsp;</span>Where I've worked</h2>
 
               <div className='md:grid md:grid-cols-4'>
@@ -301,7 +311,7 @@ function Landing() {
               
             </section>
 
-            <section className='min-h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto' id="work">
+            <section id="work" className='min-h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">03.&nbsp;</span>Some Things I've Built</h2>
 
               <ul className='text-textcolor3'>
@@ -336,7 +346,7 @@ function Landing() {
               </ul>
             </section>
 
-            <section className='pt-[80px] text-textcolor3 md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto' id="contact">
+            <section id="contact" className='pt-[80px] text-textcolor3 md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
               <h2 class="text-xl font-semibold text-textcolor mt-[10px] mb-[20px] text-center">04.&nbsp;What's Next ?</h2>
               <h1 class="text-4xl font-bold text-textcolor2 mt-[10px] mb-[40px] text-center">Get In Touch</h1>
               <p className='font-mono'>
@@ -349,12 +359,12 @@ function Landing() {
             <div>
               <ul className='flex justify-center'>
                 <li className='mx-5'>
-                  <a>
+                  <a href="https://github.com/channghiep">
                     <GitHub/>
                   </a>
                 </li>
                 <li className='mx-5'>
-                  <a>
+                  <a href="https://www.linkedin.com/in/channghiep/">
                     <Linkedin/>
                   </a>
                 </li>
