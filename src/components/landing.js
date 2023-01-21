@@ -98,7 +98,7 @@ function Landing() {
               </div>
             </section>
 
-            <section class="min-h-screen md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
+            <section class="min-h-screen md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto" id="about">
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">01.&nbsp;</span>About Me</h2>
               <div class="text-textcolor3 md:grid md:grid-cols-3 gap-x-10 font-mono">
                 <div className='col-span-2'>
@@ -142,7 +142,7 @@ function Landing() {
               </div>
             </section>
 
-            <section class="min-h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto">
+            <section class="min-h-screen mt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto" id="experience">
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">02.&nbsp;</span>Where I've worked</h2>
 
               <div className='md:grid md:grid-cols-4'>
@@ -301,7 +301,7 @@ function Landing() {
               
             </section>
 
-            <section className='min-h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
+            <section className='min-h-screen pt-[80px] md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto' id="work">
               <h2 class="text-xl font-semibold text-textcolor2 mt-[10px] mb-[40px] flex items-center after:content-[attr(after)] after:w-2/4 after:h-[1px] after:bg-textcolor3 after:block after:ml-4"><span class="text-textcolor">03.&nbsp;</span>Some Things I've Built</h2>
 
               <ul className='text-textcolor3'>
@@ -336,7 +336,7 @@ function Landing() {
               </ul>
             </section>
 
-            <section className='pt-[80px] text-textcolor3 md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto'>
+            <section className='pt-[80px] text-textcolor3 md:max-w-[90%] lg:max-w-screen-md xl:max-w-screen-lg md:mx-auto' id="contact">
               <h2 class="text-xl font-semibold text-textcolor mt-[10px] mb-[20px] text-center">04.&nbsp;What's Next ?</h2>
               <h1 class="text-4xl font-bold text-textcolor2 mt-[10px] mb-[40px] text-center">Get In Touch</h1>
               <p className='font-mono'>

@@ -51,9 +51,9 @@ const Navigation = (props) => {
                             <div className={`h-[1px] w-[20px] bg-textcolor transition ease-in duration-200 transform-gpu ${isActivated ? "steering-up" : "mt-[1.5px]"}`}></div>
                     </div>
                     <ul className="hidden md:flex md:justify-center text-textcolor2">
-                        <li className="mx-2"><Link activeClass="active" to="home" spy={true} smooth={true}><span class="text-textcolor">01.&nbsp;</span>About</Link></li>
-                        <li className="mx-2"><Link to="menu" spy={true} smooth={true}><span class="text-textcolor">02.&nbsp;</span>Experience</Link></li>
-                        <li className="mx-2"><Link to="menu" spy={true} smooth={true}><span class="text-textcolor">03.&nbsp;</span>Work</Link></li>
+                        <li className="mx-2"><Link activeClass="active" to="about" spy={true} smooth={true}><span class="text-textcolor">01.&nbsp;</span>About</Link></li>
+                        <li className="mx-2"><Link to="experience" spy={true} smooth={true}><span class="text-textcolor">02.&nbsp;</span>Experience</Link></li>
+                        <li className="mx-2"><Link to="work" spy={true} smooth={true}><span class="text-textcolor">03.&nbsp;</span>Work</Link></li>
                         <li className="mx-2"><Link to="contact" spy={true} smooth={true}><span class="text-textcolor">04.&nbsp;</span>Contact</Link></li>
                     </ul>
                     
