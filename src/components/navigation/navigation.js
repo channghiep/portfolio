@@ -48,20 +48,20 @@ const Navigation = (props) => {
                             <div className={`h-[1px] w-[20px] bg-textcolor transition ease-in duration-200 transform-gpu ${isActivated ? "steering-up" : "mt-[1.5px]"}`}></div>
                     </div>
                     <ul className="hidden md:flex md:justify-center text-textcolor2">
-                        <li className="mx-2"><Link activeClass="active" to="about" spy={true} smooth={true}><span class="text-textcolor">01.&nbsp;</span>About</Link></li>
-                        <li className="mx-2"><Link to="experience" spy={true} smooth={true}><span class="text-textcolor">02.&nbsp;</span>Experience</Link></li>
-                        <li className="mx-2"><Link to="work" spy={true} smooth={true}><span class="text-textcolor">03.&nbsp;</span>Work</Link></li>
-                        <li className="mx-2"><Link to="contact" spy={true} smooth={true}><span class="text-textcolor">04.&nbsp;</span>Contact</Link></li>
+                        <li className="mx-2"><Link activeClass="active" to="about" spy={true} smooth={true}><span className="text-textcolor">01.&nbsp;</span>About</Link></li>
+                        <li className="mx-2"><Link to="experience" spy={true} smooth={true}><span className="text-textcolor">02.&nbsp;</span>Experience</Link></li>
+                        <li className="mx-2"><Link to="work" spy={true} smooth={true}><span className="text-textcolor">03.&nbsp;</span>Work</Link></li>
+                        <li className="mx-2"><Link to="contact" spy={true} smooth={true}><span className="text-textcolor">04.&nbsp;</span>Contact</Link></li>
                     </ul>
                     
                 </div>
                 
             </div>
             <ul className={`text-textcolor2 text-center bg-background3 m-0 p-0 nav-ul fixed z-10 h-screen right-0 pt-[100px] ${isActivated ? "w-1/2" : "w-0 overflow-hidden"}`}>
-                        <li className="my-4"><Link onClick={activateBurger} activeClass="active" to="about" spy={true} smooth={true}><span class="text-textcolor">01.&nbsp;</span>About</Link></li>
-                        <li className="my-4"><Link onClick={activateBurger} to="experience" spy={true} smooth={true}><span class="text-textcolor">02.&nbsp;</span>Experience</Link></li>
-                        <li className="my-4"><Link onClick={activateBurger} to="work" spy={true} smooth={true}><span class="text-textcolor">03.&nbsp;</span>Work</Link></li>
-                        <li className="my-4"><Link onClick={activateBurger} to="contact" spy={true} smooth={true}><span class="text-textcolor">04.&nbsp;</span>Contact</Link></li>
+                        <li className="my-4"><Link onClick={activateBurger} activeClass="active" to="about" spy={true} smooth={true}><span className="text-textcolor">01.&nbsp;</span>About</Link></li>
+                        <li className="my-4"><Link onClick={activateBurger} to="experience" spy={true} smooth={true}><span className="text-textcolor">02.&nbsp;</span>Experience</Link></li>
+                        <li className="my-4"><Link onClick={activateBurger} to="work" spy={true} smooth={true}><span className="text-textcolor">03.&nbsp;</span>Work</Link></li>
+                        <li className="my-4"><Link onClick={activateBurger} to="contact" spy={true} smooth={true}><span className="text-textcolor">04.&nbsp;</span>Contact</Link></li>
             </ul>
         </div>
     )
