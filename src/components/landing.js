@@ -98,7 +98,7 @@ function Landing() {
                 <h2 className="text-5xl font-semibold text-textcolor2">Brian Nguyen</h2>
               </div>
               <div>
-                <h3 className="text-4xl text-textcolor3">I build website for small businesses</h3>
+                <h3 class="text-4xl text-textcolor3">I build websites for small businesses</h3>
               </div>
               <div>
                 <p className="text-lg text-textcolor3 font-mono">I’m a web developer specializing in building (and occasionally designing) exceptional digital experiences. 
