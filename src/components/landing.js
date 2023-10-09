@@ -48,7 +48,6 @@ function Landing() {
   ]
 
   const smallScreen = useMediaQuery("(min-width:768px)");
-  console.log(smallScreen)
 
   return (
     <div>
@@ -71,7 +70,7 @@ function Landing() {
                 <Linkedin/>
               </a>
              </li>
-            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto">
+            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-textcolor2 after:block after:mb-0 after:mt-3 after:mx-auto">
               <a href="https://www.facebook.com/nghiep.nguyenchan">
                 <Facebook/>
               </a>
@@ -85,7 +84,7 @@ function Landing() {
                 briannguyen.net
               </a>
             </li>
-            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-white after:block after:mb-0 after:mt-3 after:mx-auto"></li>
+            <li after="" class="mt-2 after:content-[attr(after)] after:w-[.5px] after:h-[90px] after:bg-textcolor2 after:block after:mb-0 after:mt-3 after:mx-auto"></li>
           </ul>
         </div>
 
@@ -94,7 +93,7 @@ function Landing() {
 
             <section class="flex flex-col justify-center items-start min-h-screen h-screen max-w-screen-sm md:mx-auto xl:max-w-screen-lg">
               <div>
-                <h1 class="text-md font-light text-textcolor ">Hi, my name is</h1>
+                <h1 class="text-md font-light text-textcolor font-semibold">Hi, my name is</h1>
               </div>
               <div>
                 <h2 class="text-5xl font-semibold text-textcolor2">Brian Nguyen</h2>
