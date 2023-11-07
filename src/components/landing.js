@@ -20,7 +20,7 @@ function Landing() {
       project: "YouTube Search Project",
       description: "A web app created using ReactJS and styling with Tailwind. The application intergrates Youtube Search API and Embed Youtube Video enabling user to fully watch a Youtube video while being able to search and create a list for next video",
       tech:[
-        "ReactJS", "Tailwind", "Youtube Search API", "AWS Amplify"
+        "React", "Tailwind", "Youtube Search API", "AWS Amplify"
       ],
       gitLink:"https://github.com/channghiep/youtubesearch",
       externalLink:"https://master.d3sv4kcm72raqj.amplifyapp.com/"
