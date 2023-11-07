@@ -199,32 +199,32 @@ function Landing() {
 
                   {tabIndex === 0 && (
                     <Box>
-                      <h2 className="text-xl font-normal text-textcolor2">Web Developer @Freelance</h2>
-                      <h3 className="text-textcolor3">March 2020 - Present</h3>
+                      <h2 className="text-xl font-normal text-textcolor2">Operation Manager @Intertech Building Services</h2>
+                      <h3 className="text-textcolor3">November 2022 - Present</h3>
                       <ul className="text-textcolor3 font-mono">
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Build and deploy websites for small businesses using ReactJS to provide a professional appearance and enhance reach on the public domain which successfully increase incoming calls to business by over 20%.
+                        Maintain good relationship with customer, resolve pop-up issues and handle inventory.
                         </li>
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Collaborate with customers to create and manage public profiles, social media accounts to improve customer support ability which bring more followers to social media accounts and maintain over 4 stars on Google rating.
+                        Manage supplies, oversee staffing operations and implement effective workflow processes and standards.
                         </li>
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Hold daily meetings with the designer and project manager to keep everyone up-to-date and improve coding efficiency and component quality.
+                        Support recruitment, training, and resolve payroll-related concerns, ensure smooth personnel operations.
                         </li>
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Use version control with Git/GitHub to simultaneously fix and improve the code, improving team flow and productivity.
+                        Oversee new customer setup and perform quality control.
                         </li>      
                       </ul>
                     </Box>
@@ -238,39 +238,45 @@ function Landing() {
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Analyze engineer drawings to identify potential feasibility and manufacturing issues and propose feasible solutions within current capacity. This results in a 15% increase in the winning rate of quotations.
+                        Estimate labor and material expenses, prepare competitive quotations using ERP software.
                         </li>
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Build manufacturing procedures based on Wesgar's standards and in-house machine capabilities, resulting in accurate processes and a reduction in product rejection rates.
+                        Coordinate with suppliers to obtain pricing details for tools and materials, ensure accurate cost assessments for procurement needs.
                         </li>
                         <li 
                           before="▹"
                           className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                         >
-                          Estimate the time and expenses for each production stage by evaluating the nature of the material and the customer's design, allowing for competitive pricing by minimizing costs.
-                        </li>      
+                        Analyze engineering drawing to determine the feasibility of the engineering design base on company available resources. Identify problems and develop solutions to meet customer requirements.
+                        </li>
+                        <li 
+                          before="▹"
+                          className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
+                        >
+                        Develop and optimize manufacturing processes, support workers to ensure designs meet specifications.
+                        </li>       
                       </ul>
                     </Box>
                   )}
                   {tabIndex === 2 && (
                     <Box>
                     <h2 className="text-xl font-normal text-textcolor2">Teaching Assistant @Langara College</h2>
-                    <h3 className="text-textcolor3">September 2022 - Present</h3>
+                    <h3 className="text-textcolor3">September 2021 - Present</h3>
                     <ul className="text-textcolor3 font-mono">
                       <li 
                         before="▹"
                         className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                       >
-                        Evaluate students' assignments and coding exams using the professor's guidelines and provide feedback to help students perform better. This results in accurate and fair grades for students.
+                      Evaluate technical exams and assignments for completeness and accuracy, following established guidelines. Make informed decisions on the acceptability of the work based on thorough documentation assessment.
                       </li>
                       <li 
                         before="▹"
                         className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                       >
-                        Report to the professor on students' performance, consult and give suggestions to improve the learning experience. This helps students understand the material better and improve their grades.
+                      Delivery insightful feedback to students, pinpoint areas of improvement in assignments and offer actionable suggestions to enhance their performance in future assessments.
                       </li>     
                     </ul>
                   </Box>
@@ -278,19 +284,19 @@ function Landing() {
                   {tabIndex === 3 && (
                     <Box>
                     <h2 className="text-xl font-normal text-textcolor2">Technical Specialist @London Drugs</h2>
-                    <h3 className="text-textcolor3">August 2021 – January 2022</h3>
+                    <h3 className="text-textcolor3">August 2021 – December 2021</h3>
                     <ul className="text-textcolor3 font-mono">
                       <li 
                         before="▹"
                         className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                       >
-                        Advised customers on appropriate service and products by taking extra step digging into their problems which resulted in increasing department’s sale and reducing return rate.
+                      Advised clients on suitable tech accessories and provided customized solutions to meet their requirements, ensuring optimal satisfaction with their purchases.
                       </li>
                       <li 
                         before="▹"
                         className="before:content-[attr(before)] before:text-textcolor before:mr-1 mb-1"
                       >
-                        Suggested customer to consider purchasing add on product by providing feature and necessity of the product resulting in being best-seller of the month for add on product.
+                      Delivered exceptional customer service and building strong rapport with clients to drive sales of specific products.
                       </li>     
                     </ul>
                   </Box>
