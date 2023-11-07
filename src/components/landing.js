@@ -188,10 +188,10 @@ function Landing() {
                      
                     }}  
                   >
-                    <Tab label="Freelance"/>
+                    <Tab label="Intertech"/>
                     <Tab label="Wesgar"/>
                     <Tab label="Langara"/>
-                    <Tab label="London Drug"/>
+                    <Tab label="London Drugs"/>
                   </Tabs>
                 </Box>
 
